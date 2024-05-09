@@ -1,0 +1,22 @@
+.recipe-detail {
+    padding: 20px;
+}
+
+.recipe-detail h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-detail img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe-detail p {
+    font-size: 16px;
+    color: #333;
+}

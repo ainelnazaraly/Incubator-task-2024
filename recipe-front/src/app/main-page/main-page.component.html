@@ -1,0 +1,28 @@
+<body>
+    <header>
+        <h1>TamakZhik</h1>
+        <p>Indulge in the art of culinary exploration with TamakZhik. Discover a world of flavors, where each dish tells a unique story. From savory classics to innovative creations, our recipes are crafted to delight your senses and inspire your creativity in the kitchen.</p>
+        <div class="line"></div>
+    </header>
+
+    <section class="recipes">
+        <h2>Top 5 Best Recipes</h2>
+        <div class="recipe-list">
+          <div class="recipe" *ngFor="let recipe of recipes">
+            <img [src]="recipe.imageUrl" [alt]="recipe.name">
+            <p>{{ recipe.name }}</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="categories">
+        <h2>Categories</h2>
+        <div class="category" *ngFor="let category of categories">
+          <div class="circle">
+            <img [src]="category.imageUrl" [alt]="category.name">
+          </div>
+          <p>{{ category.name }}</p>
+        </div>
+      </section>
+</body>
+

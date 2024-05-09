@@ -1,0 +1,13 @@
+<div class="recipes">
+    <h2>Recipes</h2>
+    <div class="recipe" *ngFor="let recipe of recipes">
+        <a [routerLink]="['/recipe', recipe.name]"> 
+            <img [src]="recipe.image_url" alt="{{ recipe.name }}">
+            <div class="details">
+                <h3>{{ recipe.name }}</h3>
+                <p>{{ recipe.description }}</p>
+                <p>Author: {{ recipe.author }}</p>
+            </div>
+        </a>
+    </div>
+</div>
